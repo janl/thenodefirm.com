@@ -1,4 +1,7 @@
 
+a {
+  cursor: pointer;
+}
 
 /* 
  *
@@ -52,18 +55,86 @@
 
 /* 
  *
+ * Navigation
+ * ------------------------------------------------------ 
+ *
+ */
+
+header .nav {
+  float: right;
+}
+
+.nav ul {
+  list-style: none;
+}
+
+.nav ul li {
+  float: left;
+  font: 1.8em 'Ostrich-black', Arial, sans-serif;
+  color: rgba(255, 255, 255, .5);
+}
+
+.nav ul a {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  padding: 0 1em;
+}
+
+.nav ul li:first-child a {
+  padding-left: 0px;
+}
+
+.nav ul a:hover, .nav ul a:active {
+  color: rgba(255, 255, 255, .65);
+}
+
+.nav ul a.active {
+  color: #88c425;
+}
+
+/* 
+ *
  * Header
  * ------------------------------------------------------ 
  *
  */
 
-#header {
-  height: 475px;
+header {
+  height: 405px;
   width: 100%;
   color: #fff;
-  background: #556270;
   padding-top: 40px;
   margin-bottom: 25px;
+  background: #556270 url('../img/nodes.png') no-repeat 90% 100%;
+}
+
+/* 
+ *
+ * Footer
+ * ------------------------------------------------------ 
+ *
+ */
+
+footer {
+  height: 205px;
+  width: 100%;
+  color: #fff;
+  margin-top: 50px;
+  padding-top: 50px;
+  background: #556270;
+}
+
+footer img {
+  margin: 10px;
+  opacity: .4;
+}
+
+footer .nav {
+/*  float: left;*/
+}
+
+footer .nav ul li {
+  font-size: 1.5em;
 }
 
 /* 
@@ -73,7 +144,7 @@
  *
  */
 
-#header .logo {
+header .logo {
 
   color: inherit;
   display: block;
@@ -86,7 +157,7 @@
   font: 2.8em 'Ostrich-black', Arial, sans-serif;
 }
 
-#header .logo span {
+header .logo span {
   position: absolute;
   top: -12px;
   left: 50%;
@@ -97,34 +168,40 @@
   font: italic .5em Georgia, Times, serif;
 }
 
+/* 
+ *
+ * Type
+ * ------------------------------------------------------ 
+ *
+ */
 
-.primary-valprop {
-  margin-top: 50px;
-  margin-bottom: 15px;
+h1, h2, h3 {
+  font: 2.1em 'Ostrich-black', Arial, sans-serif;
+  margin-bottom: 0px;
 }
 
-#nav {
-  float: right;
+h2 {
+  font-size: 1.7em;
+  color: #519548;
 }
 
-#nav ul {
-  list-style: none;
+h3 {
+  margin: 0 0em;
+  font-size: 1.5em;
 }
 
-#nav ul li {
-  float: left;
-  font: 1.8em 'Ostrich-black', Arial, sans-serif;
-  color: rgba(255, 255, 255, .5);
+em {
+  color: #c8cbcf;
+  font-style: normal;
 }
 
-#nav ul a {
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 1);
-  padding: 0 1em;
+p {
+  font: 1.2em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin-bottom: 20px;
 }
 
-#nav ul a:hover, #nav ul a:active {
-  color: rgba(255, 255, 255, .65);
+.active {
+  color: #519548;
 }
 
 /* 
@@ -134,27 +211,81 @@
  *
  */
 
-h1 {
-  font: 2.8em 'Ostrich-black', Arial, sans-serif;
+.primary-valprop {
+  margin-top: 0px;
+  margin-bottom: 15px;
 }
 
-h1 .high {
-  color: #fff;
+.button-container {
+  padding: 10px;
+  border: 1px solid #eee;
+  text-align: center;
+
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 
-h1 .low {
-  color: #c8cbcf;
+.points {
+  border: 1px solid #eee;
+  padding: 10px;
 }
+
+ol.points {
+    counter-reset: li;
+    margin-left: 0;
+    padding-left: 0;
+    overflow: auto;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+ ol.points > li {
+    position: relative;
+    margin: 0 0 2px 4em;
+    padding: 8px 8px;
+    list-style: none;
+    float: left;
+    width: 35%;
+}
+
+ol.points > li:before {
+    content: counter(li); /* Use the counter as content */
+    counter-increment: li; /* Increment the counter by 1 */
+    
+    position: absolute;
+    top: 10px;
+    left: -2em;
+
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -moz-border-radius: 99em;
+    -webkit-border-radius: 99em;
+    border-radius: 99em;
+
+    width: 1.5em;
+
+    margin: 0 10px;
+    padding: 1px;
+    color: #fff;
+    background: #519548;
+    font: bold .8em/1.25em 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+}
+
+hr {
+  border-color: #eee;
+}
+
 
 /* 
  *
  * Buttons
  * ------------------------------------------------------
- * .btn
- * A class for buttons
- *
- * .btn:hover
- * A class for the button's hover state
  *
  */
 
