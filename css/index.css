@@ -173,6 +173,30 @@ header .logo span {
   font: italic .5em Georgia, Times, serif;
 }
 
+.logo.large {
+
+  color: inherit;
+  display: block;
+  width: 3.4em;
+  margin: -10px 0 0 0;
+  padding: 15px 0 0 0;
+  position: relative;
+  text-transform: uppercase;
+  border-top: 1px solid #fff;
+  font: 2.8em 'Ostrich-black', Arial, sans-serif;
+}
+
+.logo.large {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  padding: 0 5px;
+  margin: 0 0 0 -.8em;
+  background: #556270;
+  text-transform: none;
+  font: italic .5em Georgia, Times, serif;
+}
+
 /* 
  *
  * Type
@@ -292,11 +316,26 @@ figure {
 }
 
 figure a {
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   margin: auto;
   margin-bottom: 30px;
   display: block;
+  background: #5e8e47;
+  border: 1px solid #eee;
+  -moz-border-radius: 99em;
+  -webkit-border-radius: 99em;
+  border-radius: 99em;
+}
+
+figure a .picture {
+  position: relative;
+  left: -1px;
+  top: -1px;
+}
+
+figure a .picture:hover {
+  opacity: 0.2;
 }
 
 .program {
@@ -379,81 +418,130 @@ figure a {
 
 /* 
  *
- * Buttons
+ * Members List
  * ------------------------------------------------------
  *
  */
 
-.member a {
+.member a .control {
+  position: absolute;
+  top: 35px;
+  left: 40px;
+  padding-top: 20px;
+  color: #fff;
+  height: 40px;
+  display: none;
+  z-index: 0;
+  font: 1.5em 'Ostrich-black', Arial, sans-serif;
+}
+
+.member a .control i {
+  position: absolute;
+  top: -5px;
+  left: 30px;
+  display: block;
+  height: 20px;
+  width: 20px;
+  background: url('../img/sprite_icons.png') no-repeat -1px 0;
+}
+
+.member a:hover .control {
+  display: block;
+}
+
+.member a:hover .control:hover {
+  display: block;
+}
+
+.member a .picture {
+  z-index: 1;
   background: url('../img/sprite_team.png') no-repeat;
   width: 100px;
   height: 100px;
 }
 
-#name-brianleroux {
+#name-brianleroux .picture {
   background-position: 0 0;
 }
 
-#name-nunojob {
+#name-nunojob .picture {
   background-position: -109px 0;
 }
 
-#name-jedschmidt {
+#name-jedschmidt .picture {
   background-position: -221px 0;
 }
 
-#name-timcaswell {
+#name-timcaswell .picture {
   background-position: -330px 0;
 }
 
-#name-felixgeisendorfer {
+#name-felixgeisendorfer .picture {
   background-position: -438px 0;
 }
 
-#name-paolofragomeni {
+#name-paolofragomeni .picture {
   background-position: 0 -108px;
 }
 
-#name-isaacschlueter {
+#name-isaacschlueter .picture {
   background-position: -221px -108px;
 }
 
-#name-joemccan {
+#name-joemccan .picture {
   background-position: -330px -107px;
 }
 
-#name-pedroteixeira {
+#name-pedroteixeira .picture {
   background-position: -440px -107px;
 }
 
-#name-mikealrogers {
+#name-mikealrogers .picture {
   background-position: -221px -219px;
 }
 
-#name-matthewernisse {
+#name-matthewernisse .picture {
   background-position: 0 -219px;
 }
 
-#name-adamchristian {
+#name-adamchristian .picture {
   background-position: -112px -219px;
 }
 
-#name-marcorogers {
+#name-marcorogers .picture {
   background-position: 0 -331px;
 }
 
-#name-henrikjoreteg {
+#name-henrikjoreteg .picture {
   background-position: -111px -108px;
 }
 
-#name-christiansanz {
+#name-christiansanz .picture {
   background-position: -441px -219px;
 }
 
-#name-danielshaw {
+#name-danielshaw .picture {
   background-position: -330px -219px;
 }
 
-#name-karolinaszczur {
+#name-karolinaszczur .picture {
   background-position: -112px -331px;
 }
+
+/* 
+ *
+ * Individual Bios
+ * ------------------------------------------------------
+ *
+ */
+
+body.member {
+  padding-top: 20px;
+  background: #556270;
+}
+
+.goback {
+  background: url('../img/sprite_icons.png') no-repeat -1px 0;
+}
+
+
