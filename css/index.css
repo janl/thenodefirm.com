@@ -1,6 +1,11 @@
 
-a {
+a, a:hover {
   cursor: pointer;
+  color: #88c425;
+}
+
+p a:hover {
+  text-decoration: underline;
 }
 
 /* 
@@ -12,8 +17,8 @@ a {
 
 .cf:before,
 .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    display: table; 
 }
 
 .cf:after {
@@ -105,7 +110,7 @@ header {
   color: #fff;
   padding-top: 40px;
   margin-bottom: 25px;
-  background: #556270 url('../img/nodes.png') no-repeat 90% 100%;
+  background: #556270 url('../img/nodes.png') no-repeat 80% 100%;
 }
 
 /* 
@@ -217,13 +222,12 @@ p {
 }
 
 .button-container {
-  padding: 10px;
-  border: 1px solid #eee;
   text-align: center;
+}
 
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+.button-container .btn {
+  width: 100%;
+  font-size: 1.2em;
 }
 
 .points {
@@ -281,6 +285,52 @@ hr {
   border-color: #eee;
 }
 
+figure {
+  margin: 4px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+figure a {
+  height: 80px;
+  width: 80px;
+  margin: auto;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.program {
+  list-style: none;
+}
+
+.program.plan li {
+  padding: 6px;
+  border-bottom: 1px dotted #999;
+}
+
+.program.objectives li {
+  padding: 4px 4px 4px 20px;
+  background: url('../img/sprite_icons.png') no-repeat 0 -168px;
+}
+
+/* 
+ *
+ * Twitter
+ * ------------------------------------------------------
+ *
+ */
+
+.twtr-hd, .twtr-ft {
+  display: none;
+}
+
+.twtr-tweet p {
+  font-size: 1em;
+}
+
+.twtr-tweet-wrap {
+  padding: 6px 0 8px !important;
+}
 
 /* 
  *
@@ -327,3 +377,83 @@ hr {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#85c127', endColorstr='#248223',GradientType=0 );
 }
 
+/* 
+ *
+ * Buttons
+ * ------------------------------------------------------
+ *
+ */
+
+.member a {
+  background: url('../img/sprite_team.png') no-repeat;
+  width: 100px;
+  height: 100px;
+}
+
+#name-brianleroux {
+  background-position: 0 0;
+}
+
+#name-nunojob {
+  background-position: -109px 0;
+}
+
+#name-jedschmidt {
+  background-position: -221px 0;
+}
+
+#name-timcaswell {
+  background-position: -330px 0;
+}
+
+#name-felixgeisendorfer {
+  background-position: -438px 0;
+}
+
+#name-paolofragomeni {
+  background-position: 0 -108px;
+}
+
+#name-isaacschlueter {
+  background-position: -221px -108px;
+}
+
+#name-joemccan {
+  background-position: -330px -107px;
+}
+
+#name-pedroteixeira {
+  background-position: -440px -107px;
+}
+
+#name-mikealrogers {
+  background-position: -221px -219px;
+}
+
+#name-matthewernisse {
+  background-position: 0 -219px;
+}
+
+#name-adamchristian {
+  background-position: -112px -219px;
+}
+
+#name-marcorogers {
+  background-position: 0 -331px;
+}
+
+#name-henrikjoreteg {
+  background-position: -111px -108px;
+}
+
+#name-christiansanz {
+  background-position: -441px -219px;
+}
+
+#name-danielshaw {
+  background-position: -330px -219px;
+}
+
+#name-karolinaszczur {
+  background-position: -112px -331px;
+}
