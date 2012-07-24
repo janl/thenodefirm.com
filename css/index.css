@@ -45,22 +45,22 @@ p a:hover {
 
 @font-face {
   font-family: 'Ostrich-black';
-  src: url('../fonts/ostrich-sans/ostrich-black-webfont.eot');
-  src: url('../fonts/ostrich-sans/ostrich-black-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/ostrich-sans/ostrich-black-webfont.woff') format('woff'),
-       url('../fonts/ostrich-sans/ostrich-black-webfont.ttf') format('truetype'),
-       url('../fonts/ostrich-sans/ostrich-black-webfont.svg#CombiNumeralsLtdRegular') format('svg');
+  src: url('../fonts/ostrichsans/ostrich-black-webfont.eot');
+  src: url('../fonts/ostrichsans/ostrich-black-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/ostrichsans/ostrich-black-webfont.woff') format('woff'),
+       url('../fonts/ostrichsans/ostrich-black-webfont.ttf') format('truetype'),
+       url('../fonts/ostrichsans/ostrich-black-webfont.svg#CombiNumeralsLtdRegular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Ostrich-medium';
-  src: url('../fonts/ostrich-sans/ostrich-rounded-webfont.eot');
-  src: url('../fonts/ostrich-sans/ostrich-rounded-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/ostrich-sans/ostrich-rounded-webfont.woff') format('woff'),
-       url('../fonts/ostrich-sans/ostrich-rounded-webfont.ttf') format('truetype'),
-       url('../fonts/ostrich-sans/ostrich-rounded-webfont.svg#CombiNumeralsLtdRegular') format('svg');
+  src: url('../fonts/ostrichsans/ostrich-rounded-webfont.eot');
+  src: url('../fonts/ostrichsans/ostrich-rounded-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/ostrichsans/ostrich-rounded-webfont.woff') format('woff'),
+       url('../fonts/ostrichsans/ostrich-rounded-webfont.ttf') format('truetype'),
+       url('../fonts/ostrichsans/ostrich-rounded-webfont.svg#CombiNumeralsLtdRegular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -550,7 +550,7 @@ figure a .picture:hover {
   background-position: -221px -108px;
 }
 
-#name-small-joemccan .picture {
+#name-small-joemccann .picture {
   background-position: -330px -107px;
 }
 
@@ -609,15 +609,15 @@ figure a .picture:hover {
 }
 
 #name-large-paolofragomeni {
-  background-position: 0 -108px;
+  background-position: 0px -200px;
 }
 
 #name-large-isaacschlueter {
-  background-position: -221px -108px;
+  background-position: -387px -202px;
 }
 
-#name-large-joemccan {
-  background-position: -330px -107px;
+#name-large-joemccann {
+  background-position: -580px -201px;
 }
 
 #name-large-pedroteixeira {
