@@ -160,6 +160,7 @@ header .logo {
   text-transform: uppercase;
   border-top: 1px solid #fff;
   font: 2.8em 'Ostrich-black', Arial, sans-serif;
+  white-space: nowrap;
 }
 
 header .logo span {
@@ -175,26 +176,27 @@ header .logo span {
 
 .logo.large {
 
-  color: inherit;
+  color: #fff;
   display: block;
-  width: 3.4em;
-  margin: -10px 0 0 0;
-  padding: 15px 0 0 0;
+  width: 3.35em;
+  padding: 35px 0 0 0;
+
   position: relative;
   text-transform: uppercase;
   border-top: 1px solid #fff;
-  font: 2.8em 'Ostrich-black', Arial, sans-serif;
+  font: 9.3em 'Ostrich-black', Arial, sans-serif;
+  white-space: nowrap;
 }
 
-.logo.large {
+.logo.large span {
   position: absolute;
-  top: -12px;
+  top: -35px;
   left: 50%;
   padding: 0 5px;
   margin: 0 0 0 -.8em;
   background: #556270;
   text-transform: none;
-  font: italic .5em Georgia, Times, serif;
+  font: italic .4em Georgia, Times, serif;
 }
 
 /* 
@@ -418,7 +420,7 @@ figure a .picture:hover {
 
 /* 
  *
- * Members List
+ * Members Lists
  * ------------------------------------------------------
  *
  */
@@ -453,82 +455,204 @@ figure a .picture:hover {
   display: block;
 }
 
-.member a .picture {
+.member-small a .picture {
   z-index: 1;
   background: url('../img/sprite_team.png') no-repeat;
   width: 100px;
   height: 100px;
 }
 
-#name-brianleroux .picture {
+.member-large {
+  color: #fff;
+}
+
+.member a.github, .member a.twitter {
+  background: url('../img/sprite_icons.png') no-repeat;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.member a.github {
+  background-position: -50px -116px;
+  width: 27px;
+  height: 27px;
+}
+
+.member a.twitter {
+  background-position: -1px -119px;
+  width: 32px;
+  height: 23px;
+}
+
+.member-large .picture {
+  
+  border: 1px solid #eee;
+  width: 200px;
+  height: 200px;
+  
+  -moz-border-radius: 99em;
+  -webkit-border-radius: 99em;
+  border-radius: 99em;
+  
+  margin: 20px auto 20px auto;
+}
+
+.member .row .row .logo {
+  margin-top: 120px;
+  border-bottom: 1px dotted #eee;
+}
+
+.member h1 {
+  color: #fff;
+  font: 2em 'Ostrich-black', Arial, sans-serif;
+}
+
+.member h1 em {
+  font: 1.1em 'Ostrich-medium', Arial, sans-serif;
+}
+
+/* small profile pictures */
+
+#name-small-brianleroux .picture {
   background-position: 0 0;
 }
 
-#name-nunojob .picture {
+#name-small-nunojob .picture {
   background-position: -109px 0;
 }
 
-#name-jedschmidt .picture {
+#name-small-jedschmidt .picture {
   background-position: -221px 0;
 }
 
-#name-timcaswell .picture {
+#name-small-timcaswell .picture {
   background-position: -330px 0;
 }
 
-#name-felixgeisendorfer .picture {
+#name-small-felixgeisendorfer .picture {
   background-position: -438px 0;
 }
 
-#name-paolofragomeni .picture {
+#name-small-paolofragomeni .picture {
   background-position: 0 -108px;
 }
 
-#name-isaacschlueter .picture {
+#name-small-isaacschlueter .picture {
   background-position: -221px -108px;
 }
 
-#name-joemccan .picture {
+#name-small-joemccan .picture {
   background-position: -330px -107px;
 }
 
-#name-pedroteixeira .picture {
+#name-small-pedroteixeira .picture {
   background-position: -440px -107px;
 }
 
-#name-mikealrogers .picture {
+#name-small-mikealrogers .picture {
   background-position: -221px -219px;
 }
 
-#name-matthewernisse .picture {
+#name-small-matthewernisse .picture {
   background-position: 0 -219px;
 }
 
-#name-adamchristian .picture {
+#name-small-adamchristian .picture {
   background-position: -112px -219px;
 }
 
-#name-marcorogers .picture {
+#name-small-marcorogers .picture {
   background-position: 0 -331px;
 }
 
-#name-henrikjoreteg .picture {
+#name-small-henrikjoreteg .picture {
   background-position: -111px -108px;
 }
 
-#name-christiansanz .picture {
+#name-small-christiansanz .picture {
   background-position: -441px -219px;
 }
 
-#name-danielshaw .picture {
+#name-small-danielshaw .picture {
   background-position: -330px -219px;
 }
 
-#name-karolinaszczur .picture {
+#name-small-karolinaszczur .picture {
   background-position: -112px -331px;
 }
 
-/* 
+/* large profile pictures */
+
+#name-large-brianleroux .picture {
+  background-position: 0 0;
+}
+
+#name-large-nunojob .picture {
+  background-position: -109px 0;
+}
+
+#name-large-jedschmidt .picture {
+  background-position: -221px 0;
+}
+
+#name-large-timcaswell .picture {
+  background-position: -330px 0;
+}
+
+#name-large-felixgeisendorfer .picture {
+  background-position: -438px 0;
+}
+
+#name-large-paolofragomeni .picture {
+  background-position: 0 -108px;
+}
+
+#name-large-isaacschlueter .picture {
+  background-position: -221px -108px;
+}
+
+#name-large-joemccan .picture {
+  background-position: -330px -107px;
+}
+
+#name-large-pedroteixeira .picture {
+  background-position: -440px -107px;
+}
+
+#name-large-mikealrogers .picture {
+  background-position: -221px -219px;
+}
+
+#name-large-matthewernisse .picture {
+  background-position: 0 -219px;
+}
+
+#name-large-adamchristian .picture {
+  background-position: -112px -219px;
+}
+
+#name-large-marcorogers .picture {
+  background-position: 0 -331px;
+}
+
+#name-large-henrikjoreteg .picture {
+  background-position: -111px -108px;
+}
+
+#name-large-christiansanz .picture {
+  background-position: -441px -219px;
+}
+
+#name-large-danielshaw .picture {
+  background-position: -330px -219px;
+}
+
+#name-large-karolinaszczur .picture {
+  background-position: -112px -331px;
+}
+
+
+/*
  *
  * Individual Bios
  * ------------------------------------------------------
@@ -536,12 +660,16 @@ figure a .picture:hover {
  */
 
 body.member {
-  padding-top: 20px;
+  padding-top: 40px;
   background: #556270;
+  padding-bottom: 200px
 }
 
-.goback {
-  background: url('../img/sprite_icons.png') no-repeat -1px 0;
+.goback i {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+  background: url('../img/sprite_icons.png') no-repeat 0 -240px;
 }
-
 
