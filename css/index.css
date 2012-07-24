@@ -136,6 +136,10 @@ footer {
   background: #556270;
 }
 
+footer p {  
+  font-size: .85em;
+}
+
 footer img {
   margin: 10px;
   opacity: .4;
@@ -147,6 +151,17 @@ footer .nav {
 
 footer .nav ul li {
   font-size: 1.5em;
+}
+
+footer .five.columns a {
+  display: block;
+  float: left;
+}
+
+footer .five.columns .nodejitsu {
+   padding: 0 10px 0 0;
+   margin: 0 10px 0 0;
+   border-right: 1px dotted rgba(255, 255, 255, .1); 
 }
 
 /* 
@@ -234,7 +249,7 @@ em {
 }
 
 p {
-  font: 1.2em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 1.2em/1.4em 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-bottom: 20px;
 }
 
@@ -377,7 +392,7 @@ figure a .picture:hover {
 }
 
 .twtr-tweet-wrap {
-  padding: 6px 0 8px !important;
+  padding: 12px 0 12px !important;
 }
 
 /* 
@@ -424,6 +439,22 @@ figure a .picture:hover {
   background: linear-gradient(to bottom,  rgba(133,193,39,1) 0%,rgba(36,130,35,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#85c127', endColorstr='#248223',GradientType=0 );
 }
+
+/* 
+ *
+ * Services
+ * ------------------------------------------------------
+ *
+ */
+
+ #services .tagline {
+    display: block;
+    margin: 0 0 20px 0;
+    font-size: .9em;
+    line-height: 1.3em;
+    font-style: italic;
+    color: rgba(0, 0, 0, .7);
+ }
 
 /* 
  *
