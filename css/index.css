@@ -380,6 +380,10 @@ figure a .picture:hover {
   padding: 6px 0 8px !important;
 }
 
+.twtr-tweet-text p em {
+  display: none;
+}
+
 /* 
  *
  * Buttons
