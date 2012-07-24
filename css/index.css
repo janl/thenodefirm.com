@@ -621,6 +621,10 @@ figure a .picture:hover {
   background-position: -330px -219px;
 }
 
+#name-small-chriswilliams .picture {
+  background-position: -109px -331px;
+}
+
 /* large profile pictures */
 
 #name-large-brianleroux {
@@ -685,6 +689,10 @@ figure a .picture:hover {
 
 #name-large-danielshaw  {
   background-position: -582px -402px;
+}
+
+#name-large-chriswilliams {
+  background-position: -195px -607px;
 }
 
 
