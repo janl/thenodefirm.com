@@ -395,6 +395,10 @@ figure a .picture:hover {
   padding: 12px 0 12px !important;
 }
 
+.twtr-tweet-text p em {
+  display: none;
+}
+
 /* 
  *
  * Buttons
@@ -652,35 +656,35 @@ figure a .picture:hover {
 }
 
 #name-large-pedroteixeira {
-  background-position: -440px -107px;
+  background-position: -773px -202px;
 }
 
 #name-large-mikealrogers {
-  background-position: -221px -219px;
+  background-position: -390px -405px;
 }
 
 #name-large-matthewernisse {
-  background-position: 0 -219px;
+  background-position: -2px -403px;
 }
 
 #name-large-adamchristian  {
-  background-position: -112px -219px;
+  background-position: -197px -402px;
 }
 
 #name-large-marcorogers  {
-  background-position: 0 -331px;
+  background-position: 0px -608px;
 }
 
 #name-large-henrikjoreteg  {
-  background-position: -111px -108px;
+  background-position: -194px -202px;
 }
 
 #name-large-christiansanz  {
-  background-position: -441px -219px;
+  background-position: -773px -403px;
 }
 
 #name-large-danielshaw  {
-  background-position: -330px -219px;
+  background-position: -582px -402px;
 }
 
 
