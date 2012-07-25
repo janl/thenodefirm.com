@@ -73,10 +73,6 @@ p a:hover {
  *
  */
 
-header .nav {
-  float: right;
-}
-
 .nav ul {
   list-style: none;
 }
@@ -87,10 +83,20 @@ header .nav {
   color: rgba(255, 255, 255, .5);
 }
 
+@media screen and (min-width: 767px) {
+
+  nav ul a {
+    padding: 0 1em;
+  }
+
+  header .nav {
+  float: right;
+}
+}
+
 .nav ul a {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
-  padding: 0 1em;
   font-weight: normal;
 }
 
@@ -226,8 +232,15 @@ header .logo span {
   position: relative;
   text-transform: uppercase;
   border-top: 1px solid #fff;
-  font: 9.3em 'Ostrich-black', Arial, sans-serif;
+  font-family: 'Ostrich-black', Arial, sans-serif;
   white-space: nowrap;
+}
+
+@media screen and (min-width: 767px) {
+
+.logo.large {
+  font-size: 9.3em;
+}
 }
 
 .logo.large span {
@@ -321,7 +334,14 @@ ol.points {
   padding: 8px 8px;
   list-style: none;
   float: left;
-  width: 35%;
+}
+
+@media screen and (min-width: 767px) {
+
+  ol.points > li {
+    width: 35%;
+  }
+
 }
 
 ol.points > li:before {
@@ -420,6 +440,10 @@ figure a .picture:hover {
   display: none;
 }
 
+.twtr-doc, .twtr-widget {
+  width: 100% !important;
+}
+
 /* 
  *
  * Buttons
@@ -432,7 +456,7 @@ figure a .picture:hover {
   display: inline-block;
   padding: 0 20px;
   font: bold 1em/3em 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: rgba(255, 255, 255, .85);
+  color: rgba(255, 255, 255, 1);
   text-align: center;
   text-decoration: none;
   -moz-border-radius: 5px;
@@ -452,7 +476,6 @@ figure a .picture:hover {
   cursor: pointer;
   -webkit-transition: color .2s ease-in;
   -moz-transition: color .2s ease-in;
-  opacity: 0.9;
 }
 
 .btn:hover, .btn:active {
@@ -510,8 +533,20 @@ figure a .picture:hover {
   background: url(../img/sprite_icons.png) no-repeat 0 -64px; 
 }
 
-#services .description {
-  height: 180px;
+@media screen and (min-width: 767px) {
+
+  #services .description {
+    height: 180px;
+  }
+
+  .member-small a .control {
+    left: 26%;
+  }
+
+  .member-small a .control i {
+    left: 40%;
+  }
+
 }
 
 /* 
@@ -521,10 +556,11 @@ figure a .picture:hover {
  *
  */
 
+
+
 .member-small a .control {
   position: absolute;
   top: 35px;
-  left: 40px;
   padding-top: 20px;
   color: #fff;
   height: 40px;
@@ -536,7 +572,6 @@ figure a .picture:hover {
 .member-small a .control i {
   position: absolute;
   top: -5px;
-  left: 30px;
   display: block;
   height: 20px;
   width: 20px;
@@ -762,6 +797,10 @@ body.member {
   padding-top: 40px;
   background: #556270;
   padding-bottom: 200px
+}
+
+.goback {
+  color: #88c425;
 }
 
 .goback i {
