@@ -306,48 +306,48 @@ p {
 }
 
 ol.points {
-    counter-reset: li;
-    padding-left: 0;
-    overflow: auto;
+  counter-reset: li;
+  padding-left: 0;
+  overflow: auto;
 
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 
  ol.points > li {
-    position: relative;
-    margin: 0 0 2px 4em;
-    padding: 8px 8px;
-    list-style: none;
-    float: left;
-    width: 35%;
+  position: relative;
+  margin: 0 0 2px 4em;
+  padding: 8px 8px;
+  list-style: none;
+  float: left;
+  width: 35%;
 }
 
 ol.points > li:before {
-    content: counter(li); /* Use the counter as content */
-    counter-increment: li; /* Increment the counter by 1 */
-    
-    position: absolute;
-    top: 10px;
-    left: -2em;
+  content: counter(li); /* Use the counter as content */
+  counter-increment: li; /* Increment the counter by 1 */
+  
+  position: absolute;
+  top: 10px;
+  left: -2em;
 
-    -moz-box-sizing:border-box;
-    -webkit-box-sizing:border-box;
-    box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
 
-    -moz-border-radius: 99em;
-    -webkit-border-radius: 99em;
-    border-radius: 99em;
+  -moz-border-radius: 99em;
+  -webkit-border-radius: 99em;
+  border-radius: 99em;
 
-    width: 1.5em;
+  width: 1.5em;
 
-    margin: 0 10px;
-    padding: 1px;
-    color: #fff;
-    background: #519548;
-    font: bold .8em/1.25em 'Helvetica Neue', Arial, sans-serif;
-    text-align: center;
+  margin: 0 10px;
+  padding: 1px;
+  color: #fff;
+  background: #519548;
+  font: bold .8em/1.25em 'Helvetica Neue', Arial, sans-serif;
+  text-align: center;
 }
 
 hr {
