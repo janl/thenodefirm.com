@@ -648,16 +648,35 @@ ul.flyout li.active a, .nav-bar li ul li.active a { background: #4d4d4d; border:
   .flyout { position: relative; width: 100% !important; top: auto; margin-right: -2px; border-width: 1px 1px 0 1px; }
   .flyout.right { float: none; right: auto; left: -1px; }
   .flyout.small, .flyout.large { width: 100% !important; }
-  .flyout p:last-child { margin-bottom: 18px; } }
-/* -------------------------------------------------- Table of Contents
------------------------------------------------------
-:: Shared Styles
-:: Page Name 1
-:: Page Name 2
-*/
-/* ----------------------------------------- Shared Styles
------------------------------------------ */
-/* ----------------------------------------- Page Name 1
------------------------------------------ */
-/* ----------------------------------------- Page Name 2
------------------------------------------ */
+  .flyout p:last-child { margin-bottom: 18px; } 
+
+  .logo.large {
+    font-size: 7.1em;
+  }
+
+  .two.columns.member-small {
+    min-width: 50%;
+    float: left;
+  }
+
+  #services .description {
+    height: auto;
+  }
+
+  header .nav { float: left; }
+
+  .nav ul a { padding: .4em .2em 0 .2em; display: inline-block; float: none; }
+  .nav ul li:first-child > a { padding-left: 0; }
+
+  ol.points li { width: 30%; }
+
+  .member-small a .control {
+     left: 36%;
+  }
+
+  .member-small a .control i {
+    left: 40%;
+  }
+
+
+}
