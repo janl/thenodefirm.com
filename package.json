@@ -1,1 +1,17 @@
-package.json
+{ 
+  "name" : "thenodefirm.com", 
+  "description" : "A website for the nodefirm.com",
+  "version" : "0.0.1",
+  "author" : "Paolo Fragomeni <paolo@async.ly>",
+  "repository" : {
+    "type" : "git",
+    "url" : "http://github.com/asyncly/thenodefirm.com.git"
+  },
+  "dependencies": {
+    "node-static": "*"
+  },
+  "engines" : ["node >= 0.8.x"],
+  "scripts": { 
+    "start": "node ./server/server.js"
+  }
+}

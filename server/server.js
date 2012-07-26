@@ -4,16 +4,17 @@ var path = require('path'),
     http = require('http'),
     static = require('node-static');
 
-var file = new(static.Server)('./public');
+var file = new(static.Server)('.');
 
 http.createServer(function (request, response) {
 
-  if (request.url === '/') {
-    request.url = 'index.html'
-  }
-  else if (path.extname(request.url) === '') {
-    request.url += '.html';
-  }
+  console.log(request.url);
+  // if (request.url === '/') {
+  //   request.url = 'index.html'
+  // }
+  // else if (path.extname(request.url) === '') {
+  //   request.url += '.html';
+  // }
   
   request.addListener('end', function () {
 

@@ -412,6 +412,10 @@ figure a .picture:hover {
   border-bottom: 1px dotted #999;
 }
 
+.program.plan {
+  margin-bottom: 50px;
+}
+
 .program.objectives li {
   padding: 4px 4px 4px 20px;
   background: url('../img/sprite_icons.png') no-repeat 0 -168px;
@@ -533,22 +537,6 @@ figure a .picture:hover {
   background: url(../img/sprite_icons.png) no-repeat 0 -64px; 
 }
 
-@media screen and (min-width: 767px) {
-
-  #services .description {
-    height: 180px;
-  }
-
-  .member-small a .control {
-    left: 26%;
-  }
-
-  .member-small a .control i {
-    left: 40%;
-  }
-
-}
-
 /* 
  *
  * Members Lists
@@ -556,9 +544,12 @@ figure a .picture:hover {
  *
  */
 
-
+.member-small a {
+  position: relative;
+}
 
 .member-small a .control {
+  width: 100px;
   position: absolute;
   top: 35px;
   padding-top: 20px;
@@ -567,6 +558,7 @@ figure a .picture:hover {
   display: none;
   z-index: 0;
   font: 1.5em 'Ostrich-black', Arial, sans-serif;
+  left: 0px;
 }
 
 .member-small a .control i {
@@ -576,6 +568,24 @@ figure a .picture:hover {
   height: 20px;
   width: 20px;
   background: url('../img/sprite_icons.png') no-repeat -1px 0;
+  left: 40px;
+}
+
+
+@media screen and (min-width: 767px) {
+
+  #services .description {
+    height: 180px;
+  }
+
+  .member-small a .control {
+    left: 0px;
+  }
+
+  .member-small a .control i {
+    left: 40px;
+  }
+
 }
 
 .member-small a:hover .control {
