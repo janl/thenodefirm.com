@@ -307,8 +307,22 @@ p {
  */
 
 .primary-valprop {
-  margin-top: 0px;
-  margin-bottom: 15px;
+  margin: 30px 50px 15px 0;
+}
+
+.primary-valprop h1 {
+  float: left;
+}
+
+.primary-valprop  p {
+  clear: both;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  color: rgba(255, 255, 255, .75);
+}
+
+.primary-valprop strong {
+  color: white;
 }
 
 .button-container {
@@ -420,6 +434,10 @@ figure a .picture:hover {
   border-bottom: 1px dotted #999;
 }
 
+.program.plan li:last-child {
+  border-bottom: none;
+}
+
 .program.plan {
   margin-bottom: 50px;
 }
@@ -439,6 +457,11 @@ figure a .picture:hover {
  * ------------------------------------------------------
  *
  */
+
+ .twitter-share-button {
+  float: left;
+  margin: 20px 0 0 20px;
+ }
 
 .twtr-hd, .twtr-ft {
   display: none;
@@ -495,7 +518,7 @@ figure a .picture:hover {
 }
 
 .btn:hover, .btn:active {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, .8);
   background: rgb(143,213,37); /* Old browsers */
   background: -moz-linear-gradient(top, rgba(143,213,37,1) 0%, rgba(92,169,81,1) 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(143,213,37,1)), color-stop(100%,rgba(92,169,81,1))); /* Chrome,Safari4+ */
@@ -549,6 +572,7 @@ figure a .picture:hover {
 #services .tagline {
   display: block;
   margin: 0 0 20px 0;
+  height: 40px;
   font-size: .9em;
   line-height: 1.3em;
   font-style: italic;
@@ -732,7 +756,7 @@ figure a .picture:hover {
   background-position: -221px -219px;
 }
 
-#name-small-matthewernisse .picture {
+#name-small-mattheweernisse .picture {
   background-position: 0 -219px;
 }
 
@@ -806,7 +830,7 @@ figure a .picture:hover {
   background-position: -390px -405px;
 }
 
-#name-large-matthewernisse {
+#name-large-mattheweernisse {
   background-position: -2px -403px;
 }
 
