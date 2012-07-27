@@ -1,7 +1,7 @@
 {
-  "name": "thenodefirm.com",
+  "name": "thenodefirm",
   "description": "A website for the nodefirm.com",
-  "version": "0.0.1-3",
+  "version": "0.4.0",
   "author": "Paolo Fragomeni <paolo@async.ly>",
   "repository": {
     "type": "git",
@@ -16,5 +16,5 @@
   "scripts": {
     "start": "node ./server/server.js"
   },
-  "subdomain": "thenodefirm.com"
+  "subdomain": "thenodefirm"
 }
