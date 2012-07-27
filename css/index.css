@@ -299,8 +299,17 @@ p {
  */
 
 .primary-valprop {
-  margin-top: 0px;
-  margin-bottom: 15px;
+  margin: 30px 50px 15px 0;
+}
+
+.primary-valprop  p {
+  font-size: 1.3em;
+  line-height: 1.3em;
+  color: rgba(255, 255, 255, .75);
+}
+
+.primary-valprop strong {
+  color: white;
 }
 
 .button-container {
@@ -541,6 +550,7 @@ figure a .picture:hover {
 #services .tagline {
   display: block;
   margin: 0 0 20px 0;
+  height: 40px;
   font-size: .9em;
   line-height: 1.3em;
   font-style: italic;
