@@ -302,7 +302,12 @@ p {
   margin: 30px 50px 15px 0;
 }
 
+.primary-valprop h1 {
+  float: left;
+}
+
 .primary-valprop  p {
+  clear: both;
   font-size: 1.3em;
   line-height: 1.3em;
   color: rgba(255, 255, 255, .75);
@@ -440,6 +445,11 @@ figure a .picture:hover {
  * ------------------------------------------------------
  *
  */
+
+ .twitter-share-button {
+  float: left;
+  margin: 20px 0 0 20px;
+ }
 
 .twtr-hd, .twtr-ft {
   display: none;
