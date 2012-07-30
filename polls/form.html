@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <link rel="icon" type="image/png" href="../favicon.png">
+
+  <title>The Node Firm satisfaction survey</title>
+
+  <!-- Included CSS Files -->
+  <link rel="stylesheet" href="../css/foundation.css">
+  <link rel="stylesheet" href="../css/index.css">
+
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+  <![endif]-->
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+<body class="poll">
+
+
+  <div class="row">
+    <div class="twelve columns">
+
+      <div class="row">
+
+        <div class="three columns">
+        </div>
+        <!-- three columns -->
+
+        <div class="six columns member-large">
+          <a class="logo large"><span>the</span>Node firm</a>
+
+        </div>
+        <!-- six columns -->
+
+        <div class="three columns">
+        </div>
+        <!-- three columns -->
+
+      </div>
+      <!-- row -->
+
+      <div class="row">
+        <div class="six columns centered">
+        <form id="poll">
+        <fieldset>
+          <h3>Tell us how did you like the training!</h3>
+          <h4>Node.js workshop at <a href="http://generalassemb.ly/locations/new-york-city/">General Assembly</a>, 2nd &ndash; 3rd Aug 2012.</h4>
+
+          <h2>Participant information</h2>
+
+          <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Name and surname" required />
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email address" required />
+          </div>
+
+          <h2>Workshop completeness</h2>
+
+          <div>
+            <label>Did you feel the subjects were complete?</label>
+            <input type="radio" name="completeness" />Yes
+            <input type="radio" name="completeness" />No
+          </div>
+
+          <div>
+            <label>Did you comprehend the subjects discussed?</label>
+            <input type="radio" name="comprehend" />Yes
+            <input type="radio" name="comprehend" />No
+          </div>
+
+          <div>
+            <label>Was anything missing?</label>
+            <input type="text" name="missing" placeholder="Please specify"  required />
+          </div>
+
+          <h2>Materials and duration</h2>
+
+          <div>
+            <label>Were the materials used clear and helpful?</label>
+            <input type="radio" name="materials" />Yes
+            <input type="radio" name="materials" />No
+          </div>
+
+          <div>
+            <label>Was the duration of the workshop appropriate?</label>
+            <input type="radio" name="duration" />Too short
+            <input type="radio" name="duration" />Too long
+            <input type="radio" name="duration" />The length was fine
+          </div>         
+
+          <h2>Overall impression</h2>
+
+          <div>
+            <label>Was it engaging?</label>
+            <input type="radio" name="engaging" />Yes
+            <input type="radio" name="engaging" />No
+          </div>
+
+          <div>
+            <label>Is there anything you would like to add?</label>
+            <textarea cols="10" rows="7" id="opinion"></textarea>
+          </div>
+
+          <button type="submit">Submit</button>
+
+        </fieldset>
+      </form>
+        </div>
+        <!-- six columns -->
+      </div>
+      <!-- row -->
+
+    </div>
+    <!-- row -->
+
+  </div>
+  <!-- twelve columns -->
+      
+
+</body>
+</html>

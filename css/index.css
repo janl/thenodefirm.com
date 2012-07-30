@@ -247,7 +247,7 @@ header .logo span {
 @media screen and (min-width: 767px) {
 
 .logo.large {
-  font-size: 9.3em;
+  font-size: 9.1em;
 }
 }
 
@@ -490,7 +490,8 @@ figure a .picture:hover {
  *
  */
 
-.btn {
+.btn, button[type=submit] {
+  border: none;
   height: 3em;
   display: inline-block;
   padding: 0 20px;
@@ -517,7 +518,7 @@ figure a .picture:hover {
   -moz-transition: color .2s ease-in;
 }
 
-.btn:hover, .btn:active {
+.btn:hover, .btn:active, button[type=submit]:hover {
   color: rgba(255, 255, 255, .8);
   background: rgb(143,213,37); /* Old browsers */
   background: -moz-linear-gradient(top, rgba(143,213,37,1) 0%, rgba(92,169,81,1) 100%); /* FF3.6+ */
@@ -869,7 +870,7 @@ figure a .picture:hover {
  *
  */
 
-body.member {
+body.member, body.poll {
   padding-top: 40px;
   background: #556270;
   padding-bottom: 200px
@@ -887,3 +888,50 @@ body.member {
   background: url('../img/sprite_icons.png') no-repeat 0 -240px;
 }
 
+/*
+ *
+ * Polls
+ * ------------------------------------------------------
+ *
+ */
+
+ #poll div {
+    margin: 20px 0;
+ }
+
+ #poll h2, #poll h3, #poll h4 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #556270;
+ }
+
+ #poll h2 {
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    font-size: 1.2em;
+ }
+
+ #poll h3 {
+    font-size: 1.7em;
+ }
+
+ #poll h4 {
+    font-size: 1em;
+    opacity: .8;
+    margin: 0 0 20px 0;
+ }
+
+ #poll label {
+      margin-bottom: 10px;
+ }
+
+#poll button {
+    margin-bottom: 30px;
+}
+
+#poll .required {
+  color: red;
+  font-style: italic;
+  font-size: .9em;
+}
