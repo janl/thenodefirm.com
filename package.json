@@ -1,7 +1,7 @@
 {
   "name": "thenodefirm",
   "description": "A website for the nodefirm.com",
-  "version": "0.4.2",
+  "version": "0.4.2-1",
   "author": "Paolo Fragomeni <paolo@async.ly>",
   "repository": {
     "type": "git",
