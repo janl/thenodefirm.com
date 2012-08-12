@@ -23,6 +23,8 @@ http.createServer(function (request, response) {
     request.url = match_class[1] + ".html";
   }
 
+  request.url = request.url.toLowerCase();
+
   console.log(request.url);
   // if (request.url === '/') {
   //   request.url = 'index.html'
