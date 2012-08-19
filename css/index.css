@@ -159,12 +159,16 @@ footer p {
 }
 
 footer img {
-  margin: 10px;
+  margin: 10px 15px;
   opacity: .4;
 }
 
-footer .nav {
-/*  float: left;*/
+footer img:first-child {
+  margin-left: 0;
+}
+
+footer .nav ul a {
+  padding: 0 .5em;
 }
 
 footer .nav ul li {
@@ -174,12 +178,6 @@ footer .nav ul li {
 footer .five.columns a {
   display: block;
   float: left;
-}
-
-footer .five.columns .nodejitsu {
-   padding: 0 10px 0 0;
-   margin: 0 10px 0 0;
-   border-right: 1px dotted rgba(255, 255, 255, .1); 
 }
 
 footer p, footer .five.columns {
