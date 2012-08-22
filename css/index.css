@@ -79,7 +79,7 @@ p a:hover {
 
 .nav ul li {
   float: left;
-  font: 1.8em 'Ostrich-black', Arial, sans-serif;
+  font: 1.7em 'Ostrich-black', Arial, sans-serif;
   color: rgba(255, 255, 255, .5);
 }
 
@@ -288,6 +288,16 @@ em {
   font-style: normal;
 }
 
+h1 em {
+  font-family: 'Ostrich-medium';
+  font-size: 32px;
+}
+
+h3 em {
+  font-family: 'Ostrich-medium';
+  font-size: 24px;  
+}
+
 p {
   font: 1.1em/1.4em 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-bottom: 20px;
@@ -310,6 +320,11 @@ p {
 
 .primary-valprop h1 {
   float: left;
+}
+
+.primary-valprop h1 em {
+  font-family: 'Ostrich-black';
+  font-size: inherit;
 }
 
 .primary-valprop  p {
@@ -932,4 +947,26 @@ body.member, body.poll {
   color: red;
   font-style: italic;
   font-size: .9em;
+}
+
+#testimonials .twelve.columns {
+   padding-bottom: 2%; 
+}
+
+#testimonials h1 {
+  margin-bottom: 2%;
+}
+
+#testimonials img {
+  opacity: .4;
+  margin: 30px 15px 0 0;
+}
+
+#testimonials img, 
+#testimonials blockquote {
+   float: left; 
+}
+
+#testimonials blockquote {
+  width: 60%;
 }

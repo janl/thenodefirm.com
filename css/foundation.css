@@ -91,7 +91,7 @@ ul.no-bullet { list-style: none; }
 ul.large li { line-height: 21px; }
 
 /* Blockquotes ---------------------- */
-blockquote, blockquote p { line-height: 1.5; color: #777; }
+blockquote, blockquote p { line-height: 1.5; color: #777; font-style: italic; font-size: .9em; }
 
 blockquote { margin: 0 0 17px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
 
