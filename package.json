@@ -1,8 +1,7 @@
 {
   "name": "thenodefirm",
-  "description": "A website for the nodefirm.com",
-  "version": "0.4.3",
-  "author": "Paolo Fragomeni <paolo@async.ly>",
+  "description": "thenodefirm.com",
+  "version": "0.5.0",
   "repository": {
     "type": "git",
     "url": "http://github.com/thenodefirm/thenodefirm.com.git"
@@ -10,15 +9,17 @@
   "dependencies": {
     "node-static": "*"
   },
+  "scripts": {
+    "start": "node server.js"
+  },
   "engines": [
     "node >= 0.8.x"
   ],
-  "scripts": {
-    "start": "node ./server/server.js"
-  },
   "subdomain": "thenodefirm",
   "domains": [
     "thenodefirm.com",
-    "www.thenodefirm.com"
+    "www.thenodefirm.com",
+    "nodefirm.com",
+    "www.nodefirm.com"
   ]
 }

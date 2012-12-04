@@ -1,2 +1,9 @@
+*.swp
 .DS_Store
-node_modules/*
+.idea
+nohup.out
+npm-debug.log
+node_modules
+*.pem
+*.srl
+*.iml

@@ -2,6 +2,8 @@
 
 The Node Firm Website
 
-# Did it work?
+http://thenodefirm.com
+
+## Nodejitsu Deploy Status
 
 [![deploy status](http://webhooks.jit.su/thenodefirm/thenodefirm.com.png)](https://webops.jit.su#/thenodefirm/thenodefirm.com)
