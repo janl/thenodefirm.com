@@ -9,7 +9,7 @@ http.createServer(function (request, response) {
 
   var match_root = /^\/$/.exec(request.url)
     , match_members = /^\/(members|about)\/(.*)/.exec(request.url)
-    , match_class = /^\/(essential-nodejs-training-course|nodejs-consulting-subscription)/.exec(request.url)
+    , match_class = /^\/(essential-nodejs-training-course|nodejs-consulting-subscriptions)/.exec(request.url)
 
   if (match_root) {
     request.url = "index.html"
