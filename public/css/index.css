@@ -970,3 +970,7 @@ body.member, body.poll {
 #testimonials blockquote {
   width: 60%;
 }
+
+#subscriptions_table tbody tr td {
+  text-align: center;
+}
