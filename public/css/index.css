@@ -802,6 +802,10 @@ figure a .picture:hover {
   background-position: -222px -331px;
 }
 
+#name-small-janlehnardt .picture {
+  background-position: -330px -331px;
+}
+
 /* large profile pictures */
 
 #name-large-brianleroux {
@@ -874,6 +878,10 @@ figure a .picture:hover {
 
 #name-large-eliinsua {
   background-position: -388px -608px;
+}
+
+#name-large-janlehnardt {
+  background-position: -588px -608px;
 }
 
 /*
